@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+
+    <title>WIKI DE DRAGON BALL</title>
+</head>
+<script>
+  function validarFormulario() {
+      var name = document.getElementById('name').value;
+      var phone = document.getElementById('phone').value;
+      var correo = document.getElementById('correo').value;
+      var password = document.getElementById('password').value;
+      var mensaje = document.getElementById('mensaje').value;
+
+      
+      if (name.length < 3) {
+            alert('Nombre muy corto. Por favor, ingrésalo nuevamente.');
+            return false;
+        }
+
+        if (password.length < 8) {
+            alert('La contraseña debe tener al menos 8 caracteres. Por favor, ingrésala nuevamente.');
+            return false;
+        }
+        if (phone.length < 9) {
+            alert('El telefonno debe tener al menos  9 caracteres. Por favor, ingrésala nuevamente.');
+            return false;
+        }
+
+
+      if (name === '' || phone === '' || correo === '' || password === '' || mensaje === '') {
+          alert('Por favor, completa todos los campos.');
+          return false;
+      }
+
+      return true;
+  }
+
+  document.querySelector('form').onsubmit = validarFormulario;
+</script>
+
+<body class="nocontent">
+    <div class="head">
+
+        <div class="logo">
+          <a href="index.html"> DB WIKI  </a>
+        </div>
+    
+        <nav class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="personajes.html">Personajes</a>
+          <a href="comunidad.html">Comunidad</a>
+          <a href="Acercade.html">Acerca de</a>
+        </nav>  
+        </div> 
+        <h2 >Formulario comunidad</h2>
+
+        <form class=".comuniForm" action="php/formulario.php" method="POST">
+          
+          
+          <h2>Formulario comunidad</h2>
+
+          <div class="formulario">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" >
+           
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" >
+
+            <label for="correo">CORREO</label>
+            <input type="email" name="correo" id="correo" >
+            <label for="password">contraseña</label>
+            <input type="password" name="password" id="passworrd" >
+
+
+
+
+            <label for="mensaje">¿Por que te quieres unir?</label>
+            <textarea name="message" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+            <input class="btn" type="submit" onclick="validarFormulario()" value="enviar">
+            
+            
+
+          </div>
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.noticias img{
+    height: 1200px;
+    width: 1200px;
+
+
+}
+.navbar{
+    display: flex;
+    margin-right:  10px;
+
+}
+.logo{
+    margin-left: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+.navbar a:hover{
+    background:  #3f3f3f;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.header{
+    
+    height: 60vh;
+    background: url(../imagenes/inicio.gif) no-repeat center;
+    background-size: cover;
+    padding: 80px;
+
+}
+.title{
+    margin: bottom 40px; 
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+
+}
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid purple;
+    color: white;
+    text-decoration: none;
+    background-color: purple;
+}
+.btn:hover{
+    background: none;
+}
+.btn-home{
+    display: flex;
+}
+.btn-home a{
+    margin: 0 10px;
+}
+
+.content{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sau{
+    padding: 30px;
+    background: #1f1d1d;
+}
+
+.noticias{
+    background: #171717;
+
+}
+.comunidad{
+    background: url(../imagenes/comunidad.gif) no-repeat center;
+
+    background-attachment:fixed ;
+    background-size: cover;
+    text-align: center;
+    
+}
+.nocontent{
+     background: #3f3f3f;
+     width: 95%;
+     margin-left: 2%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.nocontent1{
+    background: #3f3f3f;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nocontent1 img{
+    height: 60%;
+    width: 60%;
+}
+
+
+.comuniForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    background: #3f3f3f;
+    
+}
+
+form {
+    display: block;
+   
+    text-align: center;
+    padding-left: 420px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  width: 400px;
+    
+    background-color: #3f3f3f; 
+   
+
+}
+
+.formulario {
+ display: flex;
+ justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+h3{
+    color: purple;
+    font-size: 40px;
+    text-decoration: underline;
+}
+h2{
+    color: white;
+    font-size: 50px;
+   
+}
+input,textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    background-color: #edfff0;
+    border: 2px solid white;
+    color: black;
+    outline: none;
+}
+center{
+    display: flex;
+    justify-content: center;
+    
+}
+.formatted-column-text {
+    text-align: justify;
+    line-height: 1.5;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formatted-column-text p {
+    margin-bottom: 20px;
+}
+.content1{
+    padding-top: 60px;
+}
+h4{
+    color: aqua;
+    font-size: 35px;
+    
+}
